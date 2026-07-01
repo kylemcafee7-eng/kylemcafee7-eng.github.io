@@ -1,0 +1,21 @@
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #ffffff;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.intro h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
