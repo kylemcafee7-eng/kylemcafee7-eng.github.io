@@ -18,15 +18,15 @@
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
 
-/* Intro box */
 .intro {
-    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    background: linear-gradient(135deg, #2a0f47, #3b1e5e);
     color: #fff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
     max-width: 600px;
 }
+
 
 /* Header text */
 .intro h1 {
