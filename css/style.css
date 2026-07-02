@@ -1,21 +1,63 @@
-.intro {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
-    color: #ffffff;
-    border-radius: 12px;
+/* Container that holds the intro box + photo */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     margin: 40px auto;
-    max-width: 900px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    max-width: 1000px;
+    padding: 40px;
 }
 
+/* Your photo */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Intro box */
+.intro {
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    max-width: 600px;
+}
+
+/* Header text */
 .intro h1 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin-bottom: 10px;
-    letter-spacing: 1px;
 }
 
 .intro p {
     font-size: 1.2rem;
     opacity: 0.9;
 }
+
+/* Navigation links styled as buttons */
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    padding: 10px 18px;
+    background: #ffffff22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    background: #ffffff44;
+    transform: translateY(-2px);
+}
+
