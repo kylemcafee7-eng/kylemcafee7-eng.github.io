@@ -61,6 +61,8 @@
     transform: translateY(-2px);
 }
 
+
+/* Card to display project details */
 .projects {
     max-width: 1000px;
     margin: 60px auto;
@@ -106,4 +108,27 @@
     font-size: 1.1rem;
     opacity: 0.9;
 }
+
+/* Button for project titles to match nav links*/
+.project-button {
+    display: inline-block;
+    background: #ffffff22;
+    padding: 12px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s ease;
+    margin-bottom: 20px;
+}
+
+.project-button:hover {
+    background: #ffffff44;
+    transform: translateY(-2px);
+}
+
+.project-button h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
 
