@@ -141,7 +141,7 @@ body {
         linear-gradient(45deg, #3b1e5e 25%, transparent 25%),
         linear-gradient(45deg, transparent 75%, #3b1e5e 75%);
 
-    background-size: 45px 45px; 
+    background-size: 30px 30px; 
     background-position: 0 0, 20px 20px;
 }
 
