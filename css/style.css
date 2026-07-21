@@ -154,3 +154,12 @@ body {
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
 
+.footer {
+    background: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    border-top: 2px solid #ffffff22;
+}
