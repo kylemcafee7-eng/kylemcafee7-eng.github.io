@@ -221,6 +221,30 @@
     <footer class="footer">
         © 2026 Kyle McAfee.
     </footer>
-    
+<!--Javascript of hover card functionality-->
+<script>
+    const contactBtn = document.getElementById("contact-button");
+    const hoverCard = document.getElementById("contact-hover-card");
+
+    let cardActive = false;
+
+    contactBtn.addEventListener("click", () => {
+        cardActive = !cardActive; 
+        hoverCard.style.display = cardActive ? "block" : "none";
+    });
+
+    contactBtn.addEventListener("mousemove", (e) => {
+        if (cardActive) {
+            hoverCard.style.left = (e.clientX + 15) + "px";
+            hoverCard.style.top = (e.clientY + 15) + "px";
+        }
+    });
+
+    contactBtn.addEventListener("mouseleave", () => {
+        hoverCard.style.display = "none";
+        cardActive = false;
+    });
+</script>
+
 </body>
 </html>
