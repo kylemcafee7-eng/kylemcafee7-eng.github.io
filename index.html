@@ -229,24 +229,42 @@
     const hoverCard = document.getElementById("contact-hover-card");
 
     let cardActive = false;
+    let mouseX = 0;
+    let mouseY = 0;
 
-    contactBtn.addEventListener("click", () => {
-        cardActive = !cardActive; 
-        hoverCard.style.display = cardActive ? "block" : "none";
-    });
-
+    // Track mouse position at all times while hovering over the button
     contactBtn.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
         if (cardActive) {
-            hoverCard.style.left = (e.clientX + 15) + "px";
-            hoverCard.style.top = (e.clientY + 15) + "px";
+            hoverCard.style.left = (mouseX + 15) + "px";
+            hoverCard.style.top = (mouseY + 15) + "px";
         }
     });
 
+    // Toggle card visibility on click
+    contactBtn.addEventListener("click", () => {
+        cardActive = !cardActive;
+
+        if (cardActive) {
+            hoverCard.style.display = "block";
+
+            // Position immediately using last known mouse coords
+            hoverCard.style.left = (mouseX + 15) + "px";
+            hoverCard.style.top = (mouseY + 15) + "px";
+        } else {
+            hoverCard.style.display = "none";
+        }
+    });
+
+    // Hide card when mouse leaves the button
     contactBtn.addEventListener("mouseleave", () => {
         hoverCard.style.display = "none";
         cardActive = false;
     });
 </script>
+
 
 </body>
 </html>
