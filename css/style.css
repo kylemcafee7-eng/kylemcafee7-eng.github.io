@@ -163,3 +163,16 @@ body {
     opacity: 0.9;
     border-top: 2px solid #ffffff22;
 }
+
+.hover-card {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    pointer-events: none; /* prevents blocking mouse events */
+    display: none;        /* hidden by default */
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
